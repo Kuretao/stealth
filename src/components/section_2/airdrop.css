@@ -1,0 +1,208 @@
+
+
+.airdrop-slide{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    padding: 0 375px;
+}
+
+.airdrop__title{
+    position: relative;
+
+    padding: 28px 90px;
+    background-color: #101010;
+    border-radius: 14px;
+
+    /*background: linear-gradient(118.21deg, #DE8FF7 3.94%, rgba(16, 16, 16, 0) 57.35%);*/
+    text-align: center;
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.airdrop__title::after{
+    content: '';
+    display: block;
+    border-radius: 14px;
+    background: linear-gradient(118.21deg, #DE8FF7 3.94%, rgba(16, 16, 16, 0) 57.35%);
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.airdrop__title p{
+    z-index: 1;
+}
+
+.airdrop__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 58px;
+    gap: 19px;
+    width: 100%;
+    border-radius: 14px;
+
+    background: #34343466;
+    backdrop-filter: blur(8px);
+}
+
+.airdrop__timer{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    text-align: center;
+
+    font-family: Barlow,sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.airdrop__timer p{
+    font-family: Barlow,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.airdrop__timer p span{
+    font-family: Barlow,sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.airdrop__buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.airdrop__btn{
+    padding: 15px;
+    width: 223px;
+    font-family: "Stage Wanders", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border-radius: 12px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    .airdrop-slide{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0 44px;
+    }
+
+    .airdrop__title{
+        position: relative;
+
+        padding: 12px 9px;
+        background: linear-gradient(118.21deg, #DE8FF7 3.94%, rgba(16, 16, 16, 0) 37.35%);
+        background-color: #101010;
+        border-radius: 14px;
+
+        /*background: linear-gradient(118.21deg, #DE8FF7 3.94%, rgba(16, 16, 16, 0) 57.35%);*/
+        text-align: center;
+        font-family: Barlow, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        vertical-align: middle;
+        color: #fff;
+    }
+
+    .airdrop__title p{z-index: 100}
+
+    .airdrop__title::after{
+        display: none;
+    }
+
+    .airdrop__title p{
+        z-index: 1;
+    }
+
+    .airdrop__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 28px;
+        gap: 17px;
+        width: 100%;
+        border-radius: 14px;
+
+        background: #34343466;
+        backdrop-filter: blur(8px);
+    }
+
+    .airdrop__timer{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        text-align: center;
+
+        font-family: Barlow,sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: #fff;
+    }
+
+    .airdrop__timer p{
+        font-family: Barlow,sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+    }
+
+    .airdrop__timer p span{
+        font-family: Barlow,sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    .airdrop__buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .airdrop__btn{
+        padding: 15px;
+        width: 223px;
+        font-family: "Stage Wanders", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+
+        border-radius: 12px;
+    }
+}

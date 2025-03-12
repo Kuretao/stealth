@@ -1,0 +1,142 @@
+
+
+/* fixed */
+.fixed{
+    position: fixed;
+    width: 100vw;
+    top: 60px;
+    left: 0;
+    padding-left: 42px;
+    padding-right: 375px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.fixed__social-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-bar__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 99px;
+    background-color: #D2D3D5;
+}
+
+.social-bar__item:hover{
+    background-color: #F7A000;
+}
+
+.fixed__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 27px;
+    backdrop-filter: blur(8px);
+    background: #00000033;
+    border-radius: 8px;
+
+
+    font-family: Barlow,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: white;
+}
+
+.fixed__nav img{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    /* fixed */
+    .fixed{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+    }
+
+    .fixed__social-bar{
+        top: 23px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-bar__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 32px;
+        height: 32px;
+
+        border-radius: 99px;
+        background-color: #D2D3D5;
+    }
+
+    .social-bar__item:hover{
+        background-color: #F7A000;
+    }
+
+    .fixed__nav{
+        position: fixed;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 9px 28px;
+        width: max-content ;
+        backdrop-filter: blur(8px);
+        background: #00000033;
+        border-radius: 8px;
+        bottom: 10px;
+        transform: translateX(-50%);
+        left: 50%;
+
+
+        font-family: Barlow,sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 20px;
+        vertical-align: middle;
+        color: white;
+    }
+
+    .fixed__nav a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .fixed__nav img{
+        display: block;
+    }
+}
