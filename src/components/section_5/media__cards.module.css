@@ -93,8 +93,6 @@
     vertical-align: middle;
     text-decoration: underline;
     text-decoration-style: solid;
-    text-decoration-offset: 0%;
-    text-decoration-thickness: 0%;
     text-decoration-skip-ink: auto;
 
     color: #fff;
@@ -201,8 +199,6 @@
         vertical-align: middle;
         text-decoration: underline;
         text-decoration-style: solid;
-        text-decoration-offset: 0%;
-        text-decoration-thickness: 0%;
         text-decoration-skip-ink: auto;
 
         color: #fff;
